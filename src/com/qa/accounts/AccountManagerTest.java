@@ -19,7 +19,7 @@ public class AccountManagerTest {
 	}
 	
 	@Test
-	public void countingAccountsWithSameFirstName() {
+	public void countingAccountsWithSameFirstNameRefactored() {
 		service.addAccount(hugh);
 		service.addAccount(hugh);
 		Account account1 = new Account("Hugh","Grierson",1);
@@ -30,7 +30,7 @@ public class AccountManagerTest {
 		service.addAccount(account3);
 		int expected=3;
 		
-		int actual = service.countingAccountsWithSameFirstName("Hugh");
+		int actual = service.countingAccountsWithSameFirstNameRefactored("Hugh");
 		assertEquals(expected, actual);
 	}
 	
