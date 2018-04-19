@@ -1,7 +1,5 @@
 package com.qa.accounts;
 
-import java.util.Map;
-import java.util.Map.Entry;
 import java.util.HashMap;
 import java.util.Iterator;
 

@@ -32,5 +32,20 @@ public class Service {
 		public HashMap<Integer,Account> getAccountMap() {
 			return this.accountMap;
 		}
-
+		
+		public int countingAccountsWithSameFirstName(String name) {
+			
+			int count = 0;
+			for (Account account : accountMap.values()) {
+				if (account.getFirstName().equals(name)) {
+					count++;
+				}
+		}
+			return count;
+		}
+		
+		
+		//System.out.println();
+		//return count;
+	//}
 }
